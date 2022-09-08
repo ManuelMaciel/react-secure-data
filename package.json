@@ -1,8 +1,8 @@
 {
   "name": "react-secure-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Store your local data encrypted",
-  "author": "ManuelMaciel",
+  "author": "manuelmaciel",
   "main": "lib/index.js",
   "types": "lib/types.d.ts",
   "repository": {
