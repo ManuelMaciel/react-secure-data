@@ -11,9 +11,9 @@ const getFingerprint = () => {
   let HASH_KEY_CUSTOM = HASH_KEY;
 
   // If Cypress is installed, then load env from cypress, adding support for cypress
-  if (typeof Cypress != "undefined") HASH_KEY_CUSTOM = Cypress.env("SECURE_DATA_HASH_KEY") || Cypress.env("REACT_APP_SECURE_DATA_HASH_KEY") || HASH_KEY;
+  if (typeof Cypress != "undefined") HASH_KEY_CUSTOM = Cypress.env("CS_HASH") || Cypress.env("CS_HASH_KEY") || HASH_KEY;
   //Load the custom HASH KEY from process.env
-  else HASH_KEY_CUSTOM = process.env.SECURE_DATA_HASH_KEY || process.env.REACT_APP_SECURE_DATA_HASH_KEY || HASH_KEY;
+  else HASH_KEY_CUSTOM = process.env.CS_HASH || process.env.CS_HASH_KEY || HASH_KEY;
 
   if (typeof window === "undefined") return HASH_KEY_CUSTOM;
   return info.getFingerprint() + HASH_KEY_CUSTOM;

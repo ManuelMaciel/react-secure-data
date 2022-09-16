@@ -1,5 +1,5 @@
 {
-  "name": "react-secure-data",
+  "name": "secure-data",
   "version": "1.0.3",
   "description": "Store your local data encrypted",
   "author": "manuelmaciel",
@@ -7,45 +7,37 @@
   "types": "lib/types.d.ts",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ManuelMaciel/react-secure-data.git"
+    "url": "git@github.com:ManuelMaciel/secure-data.git"
   },
   "license": "MIT",
   "keywords": [
     "crypto",
     "react",
+    "reactjs",
+    "vuejs",
+    "vue",
+    "angular",
+    "js",
+    "javascript",
+    "typescript",
+    "secure",
     "local-storage"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/crypto-js": "^4.1.1",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.7.16",
-    "@types/react": "^18.0.18",
-    "@types/react-dom": "^18.0.6",
     "clientjs": "^0.2.1",
     "core-js": "^3.25.1",
     "crypto-js": "^4.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "typescript": "^4.8.3",
     "web-vitals": "^3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build:lib": "rm -rf dist && babel src/lib --out-dir dist --extensions \".ts,.tsx\" && rm dist/types.d.js && cp src/lib/types.d.ts dist/",
-    "build:lib-ts": "rm -rf dist && tsc src/lib/index.ts --outDir dist && rm dist/types.d.js && cp src/lib/types.d.ts dist/",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build:lib-ts": "rm -rf dist && tsc src/lib/index.ts --outDir dist && rm dist/types.d.js && cp src/lib/types.d.ts dist/"
   },
   "browserslist": {
     "production": [

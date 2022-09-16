@@ -1,7 +1,7 @@
 /**
  * This version of local storage supports the following data types as it is and other data types will be treated as string
  * object, string, number and Boolean
- * To change the custom secure key, Please add `SECURE_DATA_HASH_KEY` or `REACT_APP_SECURE_DATA_HASH_KEY` to .env and change the value
+ * To change the custom secure key, Please add `CS_HASH` or `CS_HASH_KEY` to .env and change the value
  */
 declare class SecureLocalStorage {
   // private _localStorageItems;
